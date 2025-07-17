@@ -1,22 +1,17 @@
-// tailwind.config.js
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
     content: [
-        "./src/**/*.{js,jsx,ts,tsx}",
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
     ],
-    darkMode: 'class', // enable dark mode via class strategy
     theme: {
         extend: {
             colors: {
-                'dark-bg': '#0f172a',     // dark navy
-                'dark-panel': '#1e293b',  // panel/card
-                'accent': '#3b82f6',      // blue accent
-                'accent-light': '#60a5fa',
-                'text-primary': '#f1f5f9', // text
-            },
-            fontFamily: {
-                sans: ['Inter', 'sans-serif'],
-            },
+                dark: '#0e1621',
+                darkBlue: '#1e293b',
+                accent: '#38bdf8', // cyan-400
+            }
         },
     },
     plugins: [],
-};
+}
